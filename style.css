@@ -1,0 +1,289 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'cheque', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #741650;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 1.5em;
+    background-image: url('imagens/JJD.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 15vh;
+    width: 18vw;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+.img_inicio {
+    background-image: url('imagens/fundo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 100vh;
+    color: #fff;
+}
+
+.msg_inicio{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    width: 300px; /* O valor que você desejar. */
+    margin-left: -150px; /* A metade de sua largura. */
+    top: 50%;
+    height: 300px; /* O valor que você desejar. */
+    margin-top: -150px; /* A metade de sua largura. */
+}
+
+.msg_inicio a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.msg_saber_mais{
+    border: 1px solid brown;
+    border-radius: 25px;
+    background-color: #F7BD91;
+    padding: 3%;
+}
+
+
+h1{
+    padding: 3%;
+    color: black;
+    background-image: linear-gradient(to left,
+        rgba(255,178, 102, 0),
+        rgba(255,178, 102, 0.3),
+        rgba(255,178, 102, 0.6),
+        rgba(255,178, 102, 0.8),
+        rgba(255,178, 102, 0.8),
+        rgba(255,178, 102, 0.6),
+        rgba(255,178, 102, 0.3),
+        rgba(255,178, 102, 0));
+}
+
+#empresa{
+      padding-top: 8%;
+      background-color: #F7BD91;
+      text-align: center;
+       height: 80%;
+}
+#produtos{
+          padding-top: 8%;
+          background-color: #F7BD91;
+           height: 80%;
+}
+#equipe{
+          padding-top: 8%;
+          background-color: #F7BD91;
+          height: 120%;
+}
+
+
+.cl_empresa,
+.cl_produtos,
+.cl_equipe {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+
+
+
+.cl_empresa h3{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.cl_missao img, .cl_visao img, .cl_valores img{
+    float: left;
+    height: 30vh;
+    width: 27vw;
+    margin: 3%;
+}
+
+
+.cl_produtos1 img, .cl_produtos2 img{
+    float: left;
+     height: 40vh;
+    width: 40vw;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
+
+
+.cl_organograma img{
+    float: left;
+     height: 45vh;
+    width: 45vw;
+    margin-left: 28%;
+    margin-top: 2%;
+}
+
+.cl_socios img, .cl_funcionarios img{
+    float: left;
+     height: 40vh;
+    width: 40vw;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
+
+
+footer {
+    background-color: #741650;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    height: 80%;
+}   
+
+
+.cl_info{
+    width: 30%;
+    border-color: red;  
+   float: left;
+}
+
+.cl_mapa{
+    width: 70%;
+    border-color: red;
+       float: left;
+
+
+}
+
+.cl_mapa iframe{
+    width: 100%;
+    height: 55%;
+}
+
+@media screen and (max-width: 850px){
+    section {
+    height: auto;
+    width: 100%;
+}
+#empresa{
+      padding-top: 8%;
+      background-color: #F7BD91;
+      text-align: center;
+       height: 120%;
+}
+#produtos{
+          padding-top: 8%;
+          background-color: #F7BD91;
+           height: 100%;
+}
+#equipe{
+          padding-top: 8%;
+          background-color: #F7BD91;
+          height: 145%;
+}
+#contatos{
+          padding-top: 8%;
+          height: 140%;
+}
+
+.logo {
+    display: none;
+}
+
+
+
+    .img_inicio {
+    background-image: url('imagens/fundo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 75vh;
+    color: #fff;
+}
+.cl_missao img, .cl_visao img, .cl_valores img{
+    float: left;
+    height: 30vh;
+    width: 95vw;
+    margin: 0%;
+    margin-top: 3%;
+}
+.cl_produtos1 img, .cl_produtos2 img{
+    float: left;
+     height: 30vh;
+    width: 95vw;
+    margin-left: 0%;
+    margin-top: 3%;
+}
+
+.cl_organograma img{
+    float: left;
+     height: 40vh;
+    width: 95vw;
+    margin-left: 0%;
+    margin-top: 3%;
+}
+
+
+
+.cl_socios img, .cl_funcionarios img{
+    float: left;
+     height: 40vh;
+    width: 95vw;
+    margin-left: 0%;
+    margin-top: 3%;
+}
+
+.cl_info{
+    width: 100%;
+    border-color: red;  
+   float: left;
+}
+
+.cl_mapa{
+    width: 100%;
+    border-color: red;
+       float: left;
+
+
+}
+
+}
